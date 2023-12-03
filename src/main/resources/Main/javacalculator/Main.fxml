@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" prefHeight="640.0" prefWidth="880.0" spacing="20.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+    <SplitPane dividerPositions="0.25" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" nodeOrientation="LEFT_TO_RIGHT" orientation="VERTICAL" prefHeight="493.0" prefWidth="857.0" VBox.vgrow="ALWAYS">
+        <items>
+            <AnchorPane minHeight="0.0" minWidth="0.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="100.0" prefWidth="160.0">
+                <children>
+                    <Label fx:id="label_userInput" alignment="CENTER_RIGHT" contentDisplay="RIGHT" prefHeight="147.0" prefWidth="838.0" textAlignment="RIGHT">
+                        <font>
+                            <Font size="96.0" />
+                        </font>
+                    </Label>
+                </children>
+            </AnchorPane>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                <children>
+                    <SplitPane id="Split_UserInterface" fx:id="Split_Buttons" dividerPositions="0.8" prefHeight="445.0" prefWidth="838.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                        <items>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                                <children>
+                                    <GridPane alignment="CENTER" hgap="5.0" prefHeight="445.0" prefWidth="666.0" vgap="5.0" AnchorPane.bottomAnchor="-2.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                        <columnConstraints>
+                                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                        </columnConstraints>
+                                        <rowConstraints>
+                                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                        </rowConstraints>
+                                        <children>
+                                            <Button id="Button_1" fx:id="button_1" contentDisplay="CENTER" depthTest="ENABLE" graphicTextGap="0.0" mnemonicParsing="false" onAction="#onButton_1Click" prefHeight="107.0" prefWidth="229.0" text="1" textOverrun="CLIP">
+                                                <font>
+                                                    <Font size="50.0" />
+                                                </font>
+                                            </Button>
+                                            <Button id="Button_2" contentDisplay="CENTER" depthTest="ENABLE" graphicTextGap="0.0" layoutX="10.0" layoutY="11.0" mnemonicParsing="false" prefHeight="107.0" prefWidth="229.0" text="2" textOverrun="CLIP" GridPane.columnIndex="1">
+                                                <font>
+                                                    <Font size="50.0" />
+                                                </font>
+                                            </Button>
+                                            <Button id="Button_3" contentDisplay="CENTER" depthTest="ENABLE" graphicTextGap="0.0" layoutX="10.0" layoutY="11.0" mnemonicParsing="false" prefHeight="107.0" prefWidth="229.0" text="3" textOverrun="CLIP" GridPane.columnIndex="2">
+                                                <font>
+                                                    <Font size="50.0" />
+                                                </font>
+                                            </Button>
+                                            <Button id="Button_4" contentDisplay="CENTER" depthTest="ENABLE" graphicTextGap="0.0" layoutX="10.0" layoutY="11.0" mnemonicParsing="false" prefHeight="107.0" prefWidth="229.0" text="4" textOverrun="CLIP" GridPane.rowIndex="1">
+                                                <font>
+                                                    <Font size="50.0" />
+                                                </font>
+                                            </Button>
+                                            <Button id="Button_5" contentDisplay="CENTER" depthTest="ENABLE" graphicTextGap="0.0" layoutX="10.0" layoutY="11.0" mnemonicParsing="false" prefHeight="107.0" prefWidth="229.0" text="5" textOverrun="CLIP" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                                <font>
+                                                    <Font size="50.0" />
+                                                </font>
+                                            </Button>
+                                            <Button id="Button_6" contentDisplay="CENTER" depthTest="ENABLE" graphicTextGap="0.0" layoutX="10.0" layoutY="11.0" mnemonicParsing="false" prefHeight="107.0" prefWidth="229.0" text="6" textOverrun="CLIP" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                                                <font>
+                                                    <Font size="50.0" />
+                                                </font>
+                                            </Button>
+                                            <Button id="Button_7" contentDisplay="CENTER" depthTest="ENABLE" graphicTextGap="0.0" layoutX="10.0" layoutY="11.0" mnemonicParsing="false" prefHeight="107.0" prefWidth="229.0" text="7" textOverrun="CLIP" GridPane.rowIndex="2">
+                                                <font>
+                                                    <Font size="50.0" />
+                                                </font>
+                                            </Button>
+                                            <Button id="Button_8" contentDisplay="CENTER" depthTest="ENABLE" graphicTextGap="0.0" layoutX="10.0" layoutY="11.0" mnemonicParsing="false" prefHeight="107.0" prefWidth="229.0" text="8" textOverrun="CLIP" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                                <font>
+                                                    <Font size="50.0" />
+                                                </font>
+                                            </Button>
+                                            <Button id="Button_9" contentDisplay="CENTER" depthTest="ENABLE" graphicTextGap="0.0" layoutX="10.0" layoutY="11.0" mnemonicParsing="false" prefHeight="107.0" prefWidth="229.0" text="9" textOverrun="CLIP" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                                                <font>
+                                                    <Font size="50.0" />
+                                                </font>
+                                            </Button>
+                                            <Button id="Button_0" contentDisplay="CENTER" depthTest="ENABLE" graphicTextGap="0.0" layoutX="10.0" layoutY="11.0" mnemonicParsing="false" prefHeight="107.0" prefWidth="229.0" text="0" textOverrun="CLIP" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                                                <font>
+                                                    <Font size="50.0" />
+                                                </font>
+                                            </Button>
+                                            <Button id="Button_ClearAll" contentDisplay="CENTER" depthTest="ENABLE" graphicTextGap="0.0" layoutX="234.0" layoutY="348.0" mnemonicParsing="false" prefHeight="107.0" prefWidth="229.0" text="Clear all" textOverrun="CLIP" GridPane.rowIndex="3">
+                                                <font>
+                                                    <Font size="44.0" />
+                                                </font>
+                                            </Button>
+                                            <Button id="Button_ClearOne" contentDisplay="CENTER" depthTest="ENABLE" graphicTextGap="0.0" layoutX="10.0" layoutY="11.0" mnemonicParsing="false" prefHeight="107.0" prefWidth="229.0" text="&lt;=" textOverrun="CLIP" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                                                <font>
+                                                    <Font size="50.0" />
+                                                </font>
+                                            </Button>
+                                        </children>
+                                        <opaqueInsets>
+                                            <Insets />
+                                        </opaqueInsets>
+                                        <padding>
+                                            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                        </padding>
+                                    </GridPane>
+                                </children>
+                                <effect>
+                                    <Lighting>
+                                        <bumpInput>
+                                            <Shadow />
+                                        </bumpInput>
+                                        <light>
+
+                                        </light>
+                                    </Lighting>
+                                </effect>
+                            </AnchorPane>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                                <children>
+                                    <GridPane alignment="CENTER" hgap="5.0" prefHeight="443.0" prefWidth="164.0" vgap="5.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                        <columnConstraints>
+                                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                        </columnConstraints>
+                                        <rowConstraints>
+                                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                        </rowConstraints>
+                                        <children>
+                                            <Button id="Button_Plus" mnemonicParsing="false" prefHeight="89.0" prefWidth="182.0" text="+">
+                                                <font>
+                                                    <Font size="40.0" />
+                                                </font>
+                                            </Button>
+                                            <Button id="Button_Minus" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="89.0" prefWidth="182.0" text="-" GridPane.rowIndex="1">
+                                                <font>
+                                                    <Font size="40.0" />
+                                                </font>
+                                            </Button>
+                                            <Button id="Button_Multiply" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="89.0" prefWidth="182.0" text="*" GridPane.rowIndex="2">
+                                                <font>
+                                                    <Font size="40.0" />
+                                                </font>
+                                            </Button>
+                                            <Button id="Button_Divide" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="89.0" prefWidth="182.0" text="/" GridPane.rowIndex="3">
+                                                <font>
+                                                    <Font size="40.0" />
+                                                </font>
+                                            </Button>
+                                            <Button id="Button_Equal" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="89.0" prefWidth="182.0" text="=" GridPane.rowIndex="4">
+                                                <font>
+                                                    <Font size="40.0" />
+                                                </font>
+                                            </Button>
+                                        </children>
+                                        <padding>
+                                            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                        </padding>
+                                    </GridPane>
+                                </children>
+                                <effect>
+                                    <Lighting>
+                                        <bumpInput>
+                                            <Shadow />
+                                        </bumpInput>
+                                        <light>
+
+                                        </light>
+                                    </Lighting>
+                                </effect>
+                            </AnchorPane>
+                        </items>
+                    </SplitPane>
+                </children>
+            </AnchorPane>
+        </items>
+    </SplitPane>
+</VBox>
