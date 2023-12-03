@@ -4,6 +4,6 @@ module com.example.javacalculator {
 
     requires com.dlsc.formsfx;
 
-    opens com.example.javacalculator to javafx.fxml;
-    exports com.example.javacalculator;
+    opens Main.javacalculator to javafx.fxml;
+    exports Main.javacalculator;
 }
